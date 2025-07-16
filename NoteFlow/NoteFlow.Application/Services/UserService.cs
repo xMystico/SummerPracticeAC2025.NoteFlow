@@ -9,7 +9,6 @@ using Mappers.User;
 using Domain.Entities;
 using NoteFlow.Domain.Interfaces;
 
-
 public class UserService(IUserRepository userRepository) : IUserService
 {
     public async Task<Result<UserIdentificationDTO>> AuthenticateAsync(string username, string password)
